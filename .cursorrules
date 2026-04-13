@@ -1,0 +1,93 @@
+# Proje Kuralları ve Yapısı
+
+## Kurallar
+
+1.  **Kod Stili**:
+    Projeyi oluştururken MVVM programlama standartı kullanç Gerekli klasörleri yarat ve gerekli klasörlerin yaratıldığından emin ol.
+    Gerekli tüm kütühaneleri ekle ve gerekli tm kütüphanelerin eklendiğinden emin ol.
+    Yazılan kodların SOLID prensiplerine uygun olduğundan emin ol.
+    İsteğimi olabildiğince az kod yazarak gerçekleştir.
+    İsteğimi tamamlayana kadar durma.
+    HTML5: Semantik etiketler kullanılacak.
+    Chat'ten her zaman türkçe olarak cevap verilecek.
+    Yukarıda istediğim değişiklikleri yaparken, olabildiğince kod yapısını bozmadan yapmaya çalış.
+    Tailwind CSS: Utility-first yaklaşımı ile stil verilecek.
+    Javascript: Modüler yapıda kod yazılacak.
+    Kodlar component yapısında olacak, 600 satırı geçmeyecek.
+    Gereksiz CSS dosyaları oluşturulmayacak.
+    Modern UI/UX kütüphaneleri tercih edilecek.
+    Tüm sayfalarda tutarlı font ve spacing kullan.
+    İsteğimdeki görseller internetten kendin bulup çek.
+    Kod tekrarını önlemek için tekrar kullanılabilir componentler oluşturulacak.
+2.  **Güvenlik**:
+    Kullanıcı şifreleri md5 ile hash'lenecek.
+    API'ler JWT token ile korunacak.
+    Kullanıcı rolleri ve yetkileri kontrol edilecek.
+3.  **Performans**:
+    Veritabanı sorguları optimize edilecek.
+    Gereksiz render işlemlerinden kaçınılacak.
+    Responsive tasarım uygulanacak.
+    Kullanıcı deneyimi için modern UI/UX kurallarına uyulacak.
+4.  **Test**:
+    Manuel ve otomatik testler yapılacak.
+5.  **Dokümantasyon**:
+    Proje dokümantasyonu README.md dosyasında sağlanacak.
+    API dokümantasyonu Swagger veya benzeri bir araçla oluşturulacak.
+6.  **Yetkilendirme ve Roller**:
+    Kullanıcılar **Öğretmen, Okul Yöneticisi, Admin** rollerine sahip olacak.
+    Supabase Authentication ile güvenli giriş sağlanacak.
+    Kullanıcı yetkilerine göre sayfalara erişim kontrol edilecek.
+7.  **Bildirim Sistemi**:
+    Kullanıcıya onay/red durumunda bilgilendirme yapılacak.
+
+## Genel Bilgiler
+
+Proje Adı**: Öğretmen İş Başvuru Sistemi
+Teknolojiler**: HTML5, Javascript, Tailwind CSS, phpmyadmin, php, css3, Cursor AI
+Veritabanı**: phpmyadmin
+
+## Proje Yapısı
+
+1.  **Frontend**:
+    HTML5 ve Tailwind CSS kullanılacak.
+    Responsive tasarım olacak.
+    Kullanıcı dostu arayüz.
+2.  **Backend**:
+    Javascript kullanılacak.
+    phpmyadmin ile veritabanı işlemleri yapılacak.
+3.  **Veritabanı**:
+    phpmyadmin kullanılacak.
+4.  **Admin Paneli**:
+    Başvuruları görüntüleme ve onaylama.
+    Onaylanan başvuruların Excel çıktısını alma.
+5.  **Okul Yöneticisi Paneli**:
+    Branşa göre başvuruları görüntüleme.
+    Başvuruları onaylama veya reddetme.
+6.  **Öğretmen Paneli**:
+    Kayıt olma ve iş başvurusu yapma.
+    Başvuru durumunu takip etme.
+
+## Bileşenler
+
+1.  **Header**:
+    Logo ve navigasyon menüsü (Ana Sayfa, Giriş Yap, Kayıt Ol).
+2.  **Footer**:
+    İletişim bilgileri ve sosyal medya bağlantıları.
+3.  **Kayıt Formu**:
+    Öğretmenler için kayıt formu (ad, soyad, branş, iletişim bilgileri, CV yükleme).
+4.  **Başvuru Formu**:
+    Öğretmenlerin iş başvurusu yapabileceği form.
+5.  **Admin Paneli Bileşenleri**:
+    Başvuru listesi.
+    Onaylanan başvuruların Excel çıktısı butonu.
+6.  **Okul Yöneticisi Paneli Bileşenleri**:
+    Branşa göre başvuru listesi.
+    Başvuruları onaylama/reddetme butonları.
+
+## İş Akışı
+
+Öğretmen kayıt olur ve başvuru yapar.
+Başvuru, admin paneline ve ilgili okul yöneticisinin paneline düşer.
+Okul yöneticisi başvuruyu onaylar veya reddeder.
+Onaylanan başvuru admin paneline "bekleyen başvuru" olarak düşer.
+Admin başvuruyu onaylar ve onaylanan başvuruların Excel çıktısını alır.

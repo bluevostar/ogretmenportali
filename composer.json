@@ -1,0 +1,9 @@
+{
+    "name": "ogretmenpro/app",
+    "description": "Öğretmen İş Başvuru Sistemi",
+    "type": "project",
+    "require": {
+        "phpoffice/phpspreadsheet": "^1.28"
+    },
+    "minimum-stability": "stable"
+} 

@@ -1,0 +1,55 @@
+openapi: 3.0.3
+info:
+  title: OgretmenPro API
+  version: 0.1.0
+  description: |
+    Merkezi API endpoint sablonu.
+    Bu dokuman, mevcut `php/api.php` action tabanli yapinin dokumantasyon temelini olusturur.
+servers:
+  - url: http://localhost/ogretmenpro/php
+paths:
+  /api.php:
+    get:
+      summary: Action tabanli GET endpoint
+      parameters:
+        - in: query
+          name: action
+          schema:
+            type: string
+          required: true
+      responses:
+        "200":
+          description: Basarili istek
+    post:
+      summary: Action tabanli POST endpoint
+      parameters:
+        - in: query
+          name: action
+          schema:
+            type: string
+          required: true
+      requestBody:
+        required: false
+        content:
+          application/json:
+            schema:
+              type: object
+      responses:
+        "200":
+          description: Basarili istek
+        "401":
+          description: Yetkisiz
+        "403":
+          description: Yasakli islem
+        "419":
+          description: CSRF dogrulama hatasi
+        "500":
+          description: Sunucu hatasi
+components:
+  securitySchemes:
+    sessionAuth:
+      type: apiKey
+      in: cookie
+      name: ogretmenpro_session
+security:
+  - sessionAuth: []

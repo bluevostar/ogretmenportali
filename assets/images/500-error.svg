@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800px" height="400px" viewBox="0 0 800 400" version="1.1" xmlns="http://www.w3.org/2000/svg">
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(150, 50)">
+            <!-- 500 Text -->
+            <text x="250" y="150" font-family="Arial" font-size="120" font-weight="bold" fill="#4F46E5">500</text>
+            <!-- Server/Gear Icon -->
+            <g transform="translate(200, 50)">
+                <path d="M100,60 L140,80 L140,120 L100,140 L60,120 L60,80 Z" stroke="#6366F1" stroke-width="8" fill="none"/>
+                <circle cx="100" cy="100" r="15" stroke="#6366F1" stroke-width="8" fill="#EEF2FF"/>
+                <line x1="100" y1="50" x2="100" y2="70" stroke="#6366F1" stroke-width="8"/>
+                <line x1="100" y1="130" x2="100" y2="150" stroke="#6366F1" stroke-width="8"/>
+                <line x1="50" y1="100" x2="70" y2="100" stroke="#6366F1" stroke-width="8"/>
+                <line x1="130" y1="100" x2="150" y2="100" stroke="#6366F1" stroke-width="8"/>
+            </g>
+        </g>
+    </g>
+</svg>
