@@ -1,6 +1,22 @@
 <?php
 require_once dirname(__DIR__) . '/includes/config.php';
 
+if (is_logged_in() && ($_SESSION['role'] ?? null) !== ROLE_TEACHER) {
+    switch ($_SESSION['role'] ?? '') {
+        case ROLE_ADMIN:
+            redirect(BASE_URL . '/php/admin_panel.php');
+            break;
+        case ROLE_COUNTRY_ADMIN:
+            redirect(BASE_URL . '/php/country_admin_panel.php');
+            break;
+        case ROLE_SCHOOL_ADMIN:
+            redirect(BASE_URL . '/php/school-admin-panel.php');
+            break;
+        default:
+            redirect(BASE_URL . '/php/login.php');
+    }
+}
+
 $schools = [];
 try {
     $stmt = $db->query("SELECT id, name, city, county, status FROM schools ORDER BY name ASC");
