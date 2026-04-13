@@ -93,17 +93,34 @@
             > :where(button, input[type="button"], input[type="submit"], input[type="reset"]) + :where(button, input[type="button"], input[type="submit"], input[type="reset"]) {
             margin-left: 0 !important;
         }
-        .sidebar { background-color: #ffffff; box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06); transition: width 0.2s cubic-bezier(0.4, 0, 0.2, 1); overflow: hidden; white-space: nowrap; }
+        .sidebar { position: relative; z-index: 30; background-color: #ffffff; box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06); transition: width 0.2s cubic-bezier(0.4, 0, 0.2, 1); overflow-y: hidden !important; overflow-x: visible !important; white-space: nowrap; }
         .sidebar::-webkit-scrollbar { width: 0; height: 0; }
         .sidebar { scrollbar-width: none; -ms-overflow-style: none; }
         .sidebar.collapsed { width: 5rem !important; }
         .sidebar.collapsed .sidebar-title, .sidebar.collapsed span:not(.sidebar-mini), .sidebar.collapsed .dropdown-content, .sidebar.collapsed p, .sidebar.collapsed h4, .sidebar.collapsed .w-24 { display: none; }
         .sidebar.collapsed i { font-size: 1.25rem; margin-right: 0; }
-        .sidebar.collapsed #desktopSidebarToggle i { padding-left: 14px; font-size: 24px; }
+        .sidebar.collapsed #desktopSidebarToggle i { font-size: 1.25rem; }
         .sidebar.collapsed .flex-col.items-center { margin-bottom: 1rem; }
         .sidebar.collapsed .sidebar-link { justify-content: center; padding: 0.5rem 0.75rem; }
         .sidebar.collapsed .sidebar-link i { margin-right: 0; width: auto; }
-        #desktopSidebarToggle { transform: translateX(14px); }
+        #desktopSidebarToggle {
+            position: absolute;
+            top: 50%;
+            right: 4px;
+            transform: translateY(-50%);
+            width: 2rem;
+            height: 2rem;
+            background: transparent;
+            border: none;
+            box-shadow: none;
+            z-index: 60;
+        }
+        .sidebar.collapsed #desktopSidebarToggle,
+        html.sidebar-collapsed #sidebar #desktopSidebarToggle {
+            right: auto;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
         html.sidebar-collapsed #sidebar { width: 5rem !important; }
         html.sidebar-collapsed #sidebar .sidebar-title,
         html.sidebar-collapsed #sidebar span:not(.sidebar-mini),
@@ -112,7 +129,7 @@
         html.sidebar-collapsed #sidebar h4,
         html.sidebar-collapsed #sidebar .w-24 { display: none; }
         html.sidebar-collapsed #sidebar i { font-size: 1.25rem; margin-right: 0; }
-        html.sidebar-collapsed #sidebar #desktopSidebarToggle i { padding-left: 14px; font-size: 24px; }
+        html.sidebar-collapsed #sidebar #desktopSidebarToggle i { font-size: 1.25rem; }
         html.sidebar-collapsed #sidebar .flex-col.items-center { margin-bottom: 1rem; }
         html.sidebar-collapsed #sidebar .sidebar-link { justify-content: center; padding: 0.5rem 0.75rem; }
         html.sidebar-collapsed #sidebar .sidebar-link i { margin-right: 0; width: auto; }
@@ -187,13 +204,13 @@
 <body>
     <div class="flex h-screen bg-secondary-100">
         <!-- Sidebar -->
-        <div id="sidebar" class="sidebar w-64 md:block h-screen flex flex-col overflow-hidden transition-all duration-300 ease-in-out">
-            <div class="flex items-center justify-between h-14 border-b border-secondary-200 px-4 shrink-0">
-                <span class="text-xl font-bold text-secondary-900">
+        <div id="sidebar" class="sidebar w-64 md:block h-screen flex flex-col transition-all duration-300 ease-in-out">
+            <div class="relative flex items-center h-14 border-b border-secondary-200 px-3 shrink-0">
+                <span class="text-lg font-bold text-secondary-900 flex items-center min-w-0">
                     <i class="fa-solid fa-graduation-cap fa-xl" style="color: #0ea5e9;"></i>
-                    <span class="sidebar-title">Öğretmen Portalı</span>
+                    <span class="sidebar-title ml-2">Öğretmen Portalı</span>
                 </span>
-                <button id="desktopSidebarToggle" class="hidden md:flex items-center justify-center text-secondary-500 hover:text-secondary-700">
+                <button id="desktopSidebarToggle" class="hidden md:flex shrink-0 items-center justify-center text-secondary-500 hover:text-secondary-700">
                     <i class="fas fa-bars fa-xl"></i>
                 </button>
             </div>
