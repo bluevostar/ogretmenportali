@@ -193,7 +193,7 @@
                     <i class="fa-solid fa-graduation-cap fa-xl" style="color: #0ea5e9;"></i>
                     <span class="sidebar-title">Öğretmen Portalı</span>
                 </span>
-                <button id="desktopSidebarToggle" class="text-secondary-500 hover:text-secondary-700 hidden md:block flex items-center justify-center">
+                <button id="desktopSidebarToggle" class="hidden md:flex items-center justify-center text-secondary-500 hover:text-secondary-700">
                     <i class="fas fa-bars fa-xl"></i>
                 </button>
             </div>
