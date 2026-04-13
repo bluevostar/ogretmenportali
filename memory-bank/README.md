@@ -86,7 +86,7 @@ Klasör Yapısı:
 Sistem varsayılan olarak aşağıdaki test kullanıcılarıyla kurulur:
 
 - **Sistem Yöneticisi**
-  - E-posta: admin@ogretmenpro.com
+  - E-posta: admin@ogretmenPortali.com
   - Şifre: admin123
 
 - **Okul Yöneticisi**
@@ -127,4 +127,4 @@ Bu proje MIT lisansı altında lisanslanmıştır. Daha fazla bilgi için `LICEN
 
 ## İletişim
 
-Sorularınız veya önerileriniz için: info@ogretmenpro.com 
+Sorularınız veya önerileriniz için: info@ogretmenPortali.com 

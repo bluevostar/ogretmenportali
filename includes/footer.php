@@ -101,7 +101,7 @@
                                 <i class="fas fa-envelope text-teal-300"></i>
                             </div>
                             <div>
-                                <p class="text-gray-300">info@ogretmenpro.com</p>
+                                <p class="text-gray-300">info@ogretmenPortali.com</p>
                             </div>
                         </li>
                     </ul>

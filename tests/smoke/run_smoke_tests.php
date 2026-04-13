@@ -28,7 +28,7 @@ function check($condition, $message) {
     echo "[FAIL] {$message}\n";
 }
 
-echo "OgretmenPro smoke tests basladi...\n";
+echo "OgretmenPortali smoke tests basladi...\n";
 
 // CSRF token
 $token = get_csrf_token();

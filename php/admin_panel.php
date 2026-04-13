@@ -1476,7 +1476,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                         $schoolCodePart = preg_replace('/[^a-z0-9]/', '', $normalizeForEmail($schoolCode));
                         $email = $namePart . '.' . $surnamePart . '@' . $schoolCodePart . '.meb.k12.tr';
                     } else {
-                        $email = $namePart . '.' . $surnamePart . '@ogretmenpro.local';
+                        $email = $namePart . '.' . $surnamePart . '@ogretmenPortali.local';
                     }
                 }
                 $existsStmt->execute([$email]);

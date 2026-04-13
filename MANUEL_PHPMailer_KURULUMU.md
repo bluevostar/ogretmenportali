@@ -15,7 +15,7 @@ SSL sertifika sorunu nedeniyle Composer kullanamıyorsanız, PHPMailer'ı manuel
 
 Proje klasörünüzde şu klasör yapısını oluşturun:
 ```
-ogretmenpro/
+ogretmenPortali/
   vendor/
     PHPMailer/
       PHPMailer/
@@ -26,11 +26,11 @@ ogretmenpro/
 
 1. İndirdiğiniz ZIP dosyasını açın
 2. İçindeki `PHPMailer` klasörünü bulun
-3. Bu klasörü `c:\AppServ\www\ogretmenpro\vendor\PHPMailer\` konumuna kopyalayın
+3. Bu klasörü `c:\AppServ\www\ogretmenPortali\vendor\PHPMailer\` konumuna kopyalayın
 
 Sonuç:
 ```
-c:\AppServ\www\ogretmenpro\vendor\PHPMailer\PHPMailer\
+c:\AppServ\www\ogretmenPortali\vendor\PHPMailer\PHPMailer\
   ├── src/
   │   ├── PHPMailer.php
   │   ├── SMTP.php

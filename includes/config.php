@@ -31,7 +31,7 @@ date_default_timezone_set('Europe/Istanbul');
 // Site URL'sini otomatik tespit et
 $protocol = (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off') ? 'https://' : 'http://';
 $host = isset($_SERVER['HTTP_HOST']) ? $_SERVER['HTTP_HOST'] : 'localhost';
-define('BASE_URL', $protocol . $host . '/ogretmenpro');
+define('BASE_URL', $protocol . $host . '/ogretmenPortali');
 
 // Ortam ve hata politikası
 $appEnv = strtolower((string) env('APP_ENV', 'production'));
@@ -46,7 +46,7 @@ ini_set('error_log', ROOT_DIR . '/logs/error.log');
 // Session güvenlik ayarları
 if (session_status() === PHP_SESSION_NONE) {
     $isSecureCookie = (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off');
-    session_name('ogretmenpro_session');
+    session_name('ogretmenPortali_session');
     session_set_cookie_params([
         'lifetime' => 0,
         'path' => '/',
@@ -73,7 +73,7 @@ if (!isset($_SESSION['__session_regenerated_at'])) {
 define('DB_SERVER', (string) env('DB_SERVER', 'localhost'));
 define('DB_USERNAME', (string) env('DB_USERNAME', 'root'));
 define('DB_PASSWORD', (string) env('DB_PASSWORD', '12345678'));
-define('DB_NAME', (string) env('DB_NAME', 'ogretmenpro'));
+define('DB_NAME', (string) env('DB_NAME', 'ogretmenPortali'));
 
 if ($skipDbConnection) {
     // Test/izole smoke koşullarında DB zorunluluğunu kaldır.

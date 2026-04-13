@@ -17,7 +17,7 @@
 
 3. **Proje klasöründe çalıştırın:**
    ```powershell
-   cd c:\AppServ\www\ogretmenpro
+   cd c:\AppServ\www\ogretmenPortali
    composer install
    ```
 
@@ -27,7 +27,7 @@ Eğer "certificate verify failed" hatası alıyorsanız, şu çözümleri deneyi
 
 **Çözüm 1: Composer'ı SSL doğrulamasını atlayarak indirin**
 ```powershell
-cd c:\AppServ\www\ogretmenpro
+cd c:\AppServ\www\ogretmenPortali
 php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
 php -d openssl.cafile= composer-setup.php
 php composer.phar install
@@ -36,10 +36,10 @@ php composer.phar install
 **Çözüm 2: Composer'ı manuel indirin**
 1. https://getcomposer.org/download/ adresine gidin
 2. "Manual Download" bölümünden `composer.phar` dosyasını indirin
-3. Dosyayı proje klasörüne (`c:\AppServ\www\ogretmenpro\`) kopyalayın
+3. Dosyayı proje klasörüne (`c:\AppServ\www\ogretmenPortali\`) kopyalayın
 4. Şu komutu çalıştırın:
    ```powershell
-   cd c:\AppServ\www\ogretmenpro
+   cd c:\AppServ\www\ogretmenPortali
    php composer.phar install
    ```
 
@@ -78,7 +78,7 @@ C:\Users\KullaniciAdi\AppData\Roaming\Composer\vendor\bin\composer.bat install
 ## 2. Admin Panelinden SMTP Ayarları
 
 1. **Admin paneline giriş yapın**
-   - URL: `http://localhost/ogretmenpro/php/admin_panel.php`
+   - URL: `http://localhost/ogretmenPortali/php/admin_panel.php`
    - Admin hesabıyla giriş yapın
 
 2. **Ayarlar sekmesine gidin**
@@ -150,7 +150,7 @@ SMTP Sunucu: smtp.mailtrap.io
 SMTP Port: 2525
 SMTP Kullanıcı Adı: Mailtrap kullanıcı adınız
 SMTP Şifre: Mailtrap şifreniz
-Gönderen E-posta: test@ogretmenpro.local
+Gönderen E-posta: test@ogretmenPortali.local
 Gönderen Adı: ÖğretmenPro
 SSL/TLS: ❌ İşaretsiz (Port 2525 için)
 ```

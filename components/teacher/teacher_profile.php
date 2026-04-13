@@ -179,7 +179,7 @@ try {
         <div class="mt-2 text-sm text-yellow-700">
             <p>Kullanıcı ID: <?php echo $_SESSION['user_id']; ?></p>
             <p>Rol: <?php echo isset($_SESSION['role']) ? $_SESSION['role'] : 'Belirtilmemiş'; ?></p>
-            <p>Veritabanı: ogretmenpro</p>
+            <p>Veritabanı: ogretmenPortali</p>
         </div>
     </div>
     <?php endif; ?>
@@ -367,7 +367,7 @@ document.addEventListener('DOMContentLoaded', function() {
     console.log("Sayfa yüklendi");
     
     // Türkiye'deki tüm illeri yükle
-    fetch('/ogretmenpro/assets/js/tam_iller.json')
+    fetch('/ogretmenPortali/assets/js/tam_iller.json')
         .then(response => {
             console.log('JSON Yanıt:', response);
             if (!response.ok) {
@@ -472,7 +472,7 @@ function fetchCountiesForCity(cityName) {
     console.log('İlçeler getiriliyor:', cityName);
     
     // Detaylı il-ilçe verileri için iller.json dosyasını kullan
-    fetch('/ogretmenpro/assets/js/iller.json')
+    fetch('/ogretmenPortali/assets/js/iller.json')
         .then(response => {
             if (!response.ok) {
                 throw new Error('İlçe verileri yüklenemedi');
@@ -581,7 +581,7 @@ function populateCounties(counties) {
 
 // Tam il listesi yüklenemediyse, detaylı listeyi dene
 function tryDetailedCityList() {
-    fetch('/ogretmenpro/assets/js/iller.json')
+    fetch('/ogretmenPortali/assets/js/iller.json')
         .then(response => {
             if (!response.ok) {
                 throw new Error('Detaylı il listesi yüklenemedi');

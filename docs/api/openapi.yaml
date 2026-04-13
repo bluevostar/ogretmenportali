@@ -1,12 +1,12 @@
 openapi: 3.0.3
 info:
-  title: OgretmenPro API
+  title: OgretmenPortali API
   version: 0.1.0
   description: |
     Merkezi API endpoint sablonu.
     Bu dokuman, mevcut `php/api.php` action tabanli yapinin dokumantasyon temelini olusturur.
 servers:
-  - url: http://localhost/ogretmenpro/php
+  - url: http://localhost/ogretmenPortali/php
 paths:
   /api.php:
     get:
@@ -50,6 +50,6 @@ components:
     sessionAuth:
       type: apiKey
       in: cookie
-      name: ogretmenpro_session
+      name: ogretmenPortali_session
 security:
   - sessionAuth: []

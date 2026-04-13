@@ -12,7 +12,7 @@ include dirname(__DIR__) . '/includes/header.php';
                 aşağıdaki iletişim kanallarından iletebilirsiniz.
             </p>
             <ul class="mt-6 space-y-2 text-slate-700">
-                <li><strong>E-posta:</strong> destek@ogretmenpro.com</li>
+                <li><strong>E-posta:</strong> destek@ogretmenPortali.com</li>
                 <li><strong>Telefon:</strong> +90 (312) 123 45 67</li>
                 <li><strong>Çalışma Saatleri:</strong> Hafta içi 09:00 - 18:00</li>
             </ul>
