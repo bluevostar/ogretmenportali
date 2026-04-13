@@ -331,7 +331,7 @@ $user = $viewModel->getUserDetails($_SESSION['user_id']);
                                 </div>
                                 <div>
                                     <label class="block text-xs font-medium text-gray-600 mb-1">Bölüm Açıklaması</label>
-                                    <textarea name="homepage_features_subtitle" rows="2" class="w-full px-2 py-1.5 text-sm border border-gray-300 rounded-md focus:outline-none focus:ring-blue-500 focus:border-blue-500"><?php echo htmlspecialchars($settings['homepage_features_subtitle'] ?? 'ÖğretmenPro platformu ile kariyer yolculuğunuz dört adımda başlar. Profesyonel ve güvenilir bir süreç ile hayalinizdeki okula ulaşın.'); ?></textarea>
+                                    <textarea name="homepage_features_subtitle" rows="2" class="w-full px-2 py-1.5 text-sm border border-gray-300 rounded-md focus:outline-none focus:ring-blue-500 focus:border-blue-500"><?php echo htmlspecialchars($settings['homepage_features_subtitle'] ?? 'Öğretmen Portalı platformu ile kariyer yolculuğunuz dört adımda başlar. Profesyonel ve güvenilir bir süreç ile hayalinizdeki okula ulaşın.'); ?></textarea>
                                 </div>
                                 <div class="grid grid-cols-1 md:grid-cols-2 gap-2">
                                     <div>
@@ -376,7 +376,7 @@ $user = $viewModel->getUserDetails($_SESSION['user_id']);
                             <div class="space-y-2">
                                 <div>
                                     <label class="block text-xs font-medium text-gray-600 mb-1">Bölüm Başlığı</label>
-                                    <input type="text" name="homepage_advantages_title" value="<?php echo htmlspecialchars($settings['homepage_advantages_title'] ?? 'Neden ÖğretmenPro?'); ?>" class="w-full px-2 py-1.5 text-sm border border-gray-300 rounded-md focus:outline-none focus:ring-blue-500 focus:border-blue-500">
+                                    <input type="text" name="homepage_advantages_title" value="<?php echo htmlspecialchars($settings['homepage_advantages_title'] ?? 'Neden Öğretmen Portalı?'); ?>" class="w-full px-2 py-1.5 text-sm border border-gray-300 rounded-md focus:outline-none focus:ring-blue-500 focus:border-blue-500">
                                 </div>
                                 <div>
                                     <label class="block text-xs font-medium text-gray-600 mb-1">Bölüm Açıklaması</label>

@@ -8,7 +8,7 @@
                         <div class="mr-3 h-10 w-10 bg-gradient-to-br from-teal-500 to-cyan-500 rounded-lg flex items-center justify-center shadow-lg">
                             <i class="fas fa-graduation-cap text-white text-xl"></i>
                         </div>
-                        <span class="font-bold text-xl">ÖğretmenPro</span>
+                        <span class="font-bold text-xl">Öğretmen Portalı</span>
                     </div>
                     <p class="text-gray-400 text-sm mt-2 pr-4">Türkiye'nin en kapsamlı öğretmen iş başvuru platformu. Kariyerinizi şekillendirin, binlerce okula tek platformdan başvurun.</p>
                     
@@ -110,7 +110,7 @@
             
             <!-- Alt Bilgi -->
             <div class="mt-12 pt-8 border-t border-teal-700/50 text-center">
-                <p class="text-gray-300 text-sm">&copy; <?php echo date('Y'); ?> ÖğretmenPro. Tüm hakları saklıdır.</p>
+                <p class="text-gray-300 text-sm">&copy; <?php echo date('Y'); ?> Öğretmen Portalı. Tüm hakları saklıdır.</p>
             </div>
         </div>
     </footer>

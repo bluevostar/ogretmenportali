@@ -1,5 +1,5 @@
 /**
- * ÖğretmenPro - Ana JavaScript Dosyası
+ * Öğretmen Portalı - Ana JavaScript Dosyası
  */
 
 // Form doğrulama fonksiyonu

@@ -8,7 +8,7 @@ include dirname(__DIR__) . '/includes/header.php';
         <article class="bg-white rounded-2xl shadow-sm border border-slate-100 p-8 md:p-10">
             <h1 class="text-3xl md:text-4xl font-bold text-slate-900">Hakkımızda</h1>
             <p class="mt-4 text-slate-700 leading-7">
-                ÖğretmenPro, öğretmenlerin niteliklerine uygun okul fırsatlarına daha hızlı erişmesini sağlayan
+                Öğretmen Portalı, öğretmenlerin niteliklerine uygun okul fırsatlarına daha hızlı erişmesini sağlayan
                 ve okul yöneticilerinin başvuru süreçlerini merkezi olarak yönetebildiği bir platformdur.
             </p>
             <p class="mt-4 text-slate-700 leading-7">

@@ -25,6 +25,6 @@
   <circle cx="25" cy="12" r="0.5" fill="white"/>
   
   <!-- Text with better typography -->
-  <text x="42" y="17" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="700" fill="#1F2937">ÖğretmenPro</text>
+  <text x="42" y="17" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="700" fill="#1F2937">Öğretmen Portalı</text>
   <text x="42" y="28" font-family="system-ui, -apple-system, sans-serif" font-size="9" fill="#6B7280" font-weight="400">Eğitim Kariyer Platformu</text>
 </svg> 

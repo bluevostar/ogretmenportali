@@ -12,7 +12,7 @@ include dirname(__DIR__) . '/includes/header.php';
                 platform kurallarına uygun hareket etme yükümlülüğünü kabul eder.
             </p>
             <p class="mt-4 text-slate-700 leading-7">
-                ÖğretmenPro, hizmet sürekliliği ve güvenlik kapsamında gerekli teknik değişiklikleri yapma hakkını saklı tutar.
+                Öğretmen Portalı, hizmet sürekliliği ve güvenlik kapsamında gerekli teknik değişiklikleri yapma hakkını saklı tutar.
             </p>
             <p class="mt-4 text-slate-700 leading-7">
                 Yetkisiz erişim, veri manipülasyonu ve hukuka aykırı kullanım tespitlerinde hesaplar askıya alınabilir.

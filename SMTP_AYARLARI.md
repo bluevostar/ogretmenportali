@@ -94,7 +94,7 @@ C:\Users\KullaniciAdi\AppData\Roaming\Composer\vendor\bin\composer.bat install
    | **SMTP Kullanıcı Adı** | E-posta adresiniz | `ornek@gmail.com` |
    | **SMTP Şifre** | E-posta şifreniz veya uygulama şifresi | `şifreniz` |
    | **Gönderen E-posta** | Gönderen adresi (genelde SMTP kullanıcı adıyla aynı) | `ornek@gmail.com` |
-   | **Gönderen Adı** | Gönderen görünen adı | `ÖğretmenPro` |
+   | **Gönderen Adı** | Gönderen görünen adı | `Öğretmen Portalı` |
    | **SSL/TLS Kullan** | Şifreleme türü | ✅ İşaretli (TLS için) |
 
 4. **Kaydet** butonuna tıklayın
@@ -109,7 +109,7 @@ SMTP Port: 587
 SMTP Kullanıcı Adı: gmail-adresiniz@gmail.com
 SMTP Şifre: Gmail Uygulama Şifresi (2 adımlı doğrulama açık olmalı)
 Gönderen E-posta: gmail-adresiniz@gmail.com
-Gönderen Adı: ÖğretmenPro
+Gönderen Adı: Öğretmen Portalı
 SSL/TLS: ✅ İşaretli
 ```
 
@@ -127,7 +127,7 @@ SMTP Port: 587
 SMTP Kullanıcı Adı: outlook-adresiniz@outlook.com
 SMTP Şifre: Outlook şifreniz
 Gönderen E-posta: outlook-adresiniz@outlook.com
-Gönderen Adı: ÖğretmenPro
+Gönderen Adı: Öğretmen Portalı
 SSL/TLS: ✅ İşaretli
 ```
 
@@ -139,7 +139,7 @@ SMTP Port: 465
 SMTP Kullanıcı Adı: yandex-adresiniz@yandex.com
 SMTP Şifre: Yandex şifreniz
 Gönderen E-posta: yandex-adresiniz@yandex.com
-Gönderen Adı: ÖğretmenPro
+Gönderen Adı: Öğretmen Portalı
 SSL/TLS: ✅ İşaretli (Port 465 için SSL)
 ```
 
@@ -151,7 +151,7 @@ SMTP Port: 2525
 SMTP Kullanıcı Adı: Mailtrap kullanıcı adınız
 SMTP Şifre: Mailtrap şifreniz
 Gönderen E-posta: test@ogretmenPortali.local
-Gönderen Adı: ÖğretmenPro
+Gönderen Adı: Öğretmen Portalı
 SSL/TLS: ❌ İşaretsiz (Port 2525 için)
 ```
 

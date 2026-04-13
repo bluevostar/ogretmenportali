@@ -44,7 +44,7 @@ function get_email_settings($db) {
             'smtp_password' => $rows['smtp_password'] ?? '',
             'smtp_encryption' => !empty($rows['smtp_encryption']) && $rows['smtp_encryption'] !== '0' ? 'tls' : '',
             'from_email' => $rows['from_email'] ?? ($rows['sender_email'] ?? 'noreply@' . (isset($_SERVER['HTTP_HOST']) ? $_SERVER['HTTP_HOST'] : 'localhost')),
-            'from_name' => $rows['from_name'] ?? ($rows['sender_name'] ?? 'ÖğretmenPro')
+            'from_name' => $rows['from_name'] ?? ($rows['sender_name'] ?? 'Öğretmen Portalı')
         ];
     } catch (Throwable $e) {
         error_log('get_email_settings error: ' . $e->getMessage());
@@ -55,7 +55,7 @@ function get_email_settings($db) {
             'smtp_password' => '',
             'smtp_encryption' => '',
             'from_email' => 'noreply@localhost',
-            'from_name' => 'ÖğretmenPro'
+            'from_name' => 'Öğretmen Portalı'
         ];
     }
     return $settings;
@@ -65,12 +65,12 @@ function send_verification_email($db, $to_email, $user_name, $code) {
     global $phpmailerAvailable;
     
     $settings = get_email_settings($db);
-    $subject = 'E-posta Doğrulama Kodunuz - ÖğretmenPro';
+    $subject = 'E-posta Doğrulama Kodunuz - Öğretmen Portalı';
     $message = "Merhaba " . ($user_name ?: 'Değerli Üye') . ",\n\n";
-    $message .= "ÖğretmenPro hesabınızı aktifleştirmek için doğrulama kodunuz: " . $code . "\n\n";
+    $message .= "Öğretmen Portalı hesabınızı aktifleştirmek için doğrulama kodunuz: " . $code . "\n\n";
     $message .= "Bu kod 24 saat geçerlidir. Doğrulama sayfasına gidip kodu girin ve hesabınızı aktifleştirin.\n\n";
     $message .= "Doğrulama sayfası: " . BASE_URL . "/php/verify_email.php?email=" . urlencode($to_email) . "\n\n";
-    $message .= "İyi günler,\nÖğretmenPro";
+    $message .= "İyi günler,\nÖğretmen Portalı";
     
     // Debug: Ayarları logla
     error_log("Email send attempt - SMTP Host: " . ($settings['smtp_host'] ?? 'empty') . ", PHPMailer Available: " . ($phpmailerAvailable ? 'yes' : 'no'));

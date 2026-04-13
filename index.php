@@ -22,7 +22,7 @@
     $statsSchools = $homepageSettings['homepage_stats_schools'] ?? '1200+';
     $statsSuccessRate = $homepageSettings['homepage_stats_success_rate'] ?? '92%';
     $featuresTitle = $homepageSettings['homepage_features_title'] ?? 'Sistem Nasıl Çalışır?';
-    $featuresSubtitle = $homepageSettings['homepage_features_subtitle'] ?? 'ÖğretmenPro platformu ile kariyer yolculuğunuz dört adımda başlar. Profesyonel ve güvenilir bir süreç ile hayalinizdeki okula ulaşın.';
+    $featuresSubtitle = $homepageSettings['homepage_features_subtitle'] ?? 'Öğretmen Portalı platformu ile kariyer yolculuğunuz dört adımda başlar. Profesyonel ve güvenilir bir süreç ile hayalinizdeki okula ulaşın.';
     $feature1Title = $homepageSettings['homepage_feature1_title'] ?? 'Kayıt Olun';
     $feature1Desc = $homepageSettings['homepage_feature1_description'] ?? 'Profilinizi oluşturun, kişisel bilgilerinizi girin ve CV belgenizi yükleyin.';
     $feature2Title = $homepageSettings['homepage_feature2_title'] ?? 'Başvuru Yapın';
@@ -35,7 +35,7 @@
     $statsTeachersLabel = $homepageSettings['homepage_stats_teachers_label'] ?? 'Aktif Öğretmen Üye';
     $statsSchoolsLabel = $homepageSettings['homepage_stats_schools_label'] ?? 'Kayıtlı Okul';
     $statsSuccessLabel = $homepageSettings['homepage_stats_success_label'] ?? 'Başarılı Yerleştirme Oranı';
-    $advantagesTitle = $homepageSettings['homepage_advantages_title'] ?? 'Neden ÖğretmenPro?';
+    $advantagesTitle = $homepageSettings['homepage_advantages_title'] ?? 'Neden Öğretmen Portalı?';
     $advantagesSubtitle = $homepageSettings['homepage_advantages_subtitle'] ?? 'Profesyonel bir platform ile kariyerinizi yönetin ve en iyi fırsatlara ulaşın.';
     $advantage1Title = $homepageSettings['homepage_advantage1_title'] ?? 'Güvenli Platform';
     $advantage1Desc = $homepageSettings['homepage_advantage1_description'] ?? 'Kişisel bilgileriniz güvenli bir şekilde korunur ve sadece yetkili kişiler erişebilir.';

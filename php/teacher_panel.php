@@ -219,7 +219,7 @@ try {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Öğretmen Paneli - ÖğretmenPro</title>
+    <title>Öğretmen Paneli - Öğretmen Portalı</title>
     <script>
         (function () {
             try {
@@ -585,7 +585,7 @@ try {
                         <path d="M15 12l5-2 5 2-5 2-5-2z" fill="white"/>
                         <path d="M25 12v3l-5 2-5-2v-3" fill="none" stroke="white" stroke-width="1"/>
                     </svg>
-                    <span class="sidebar-title">ÖğretmenPro</span>
+                    <span class="sidebar-title">Öğretmen Portalı</span>
                 </span>
                 <button id="desktopSidebarToggle" class="text-secondary-500 hover:text-secondary-700 hidden md:block flex items-center justify-center">
                     <i class="fas fa-bars fa-xl"></i>
@@ -684,7 +684,7 @@ try {
             <div class="flex items-center justify-between h-16 border-b border-secondary-200 px-4">
                 <span class="text-xl font-bold text-secondary-900">
                     <i class="fas fa-graduation-cap text-primary-500 mr-2"></i>
-                    ÖğretmenPro
+                    Öğretmen Portalı
                 </span>
                 <button id="closeSidebar" class="text-secondary-500 hover:text-secondary-700">
                     <i class="fas fa-times"></i>

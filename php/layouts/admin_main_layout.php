@@ -15,7 +15,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><?php echo htmlspecialchars($pageTitle ?? 'Yönetim Paneli'); ?> - ÖğretmenPro</title>
+    <title><?php echo htmlspecialchars($pageTitle ?? 'Yönetim Paneli'); ?> - Öğretmen Portalı</title>
     <script>
         (function () {
             try {
@@ -191,7 +191,7 @@
             <div class="flex items-center justify-between h-14 border-b border-secondary-200 px-4 shrink-0">
                 <span class="text-xl font-bold text-secondary-900">
                     <i class="fa-solid fa-graduation-cap fa-xl" style="color: #0ea5e9;"></i>
-                    <span class="sidebar-title">ÖğretmenPro</span>
+                    <span class="sidebar-title">Öğretmen Portalı</span>
                 </span>
                 <button id="desktopSidebarToggle" class="text-secondary-500 hover:text-secondary-700 hidden md:block flex items-center justify-center">
                     <i class="fas fa-bars fa-xl"></i>
@@ -238,7 +238,7 @@
             <div class="flex items-center justify-between h-16 border-b border-secondary-200 px-4">
                 <span class="text-xl font-bold text-secondary-900">
                     <i class="fas fa-school text-primary-500 mr-2"></i>
-                    ÖğretmenPro
+                    Öğretmen Portalı
                 </span>
                 <button id="closeSidebar" class="text-secondary-500 hover:text-secondary-700">
                     <i class="fas fa-times"></i>

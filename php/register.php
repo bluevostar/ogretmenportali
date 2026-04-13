@@ -157,7 +157,7 @@ $roleTitle = 'Öğretmen Kaydı';
             <div class="max-w-md mx-auto">
                 <div class="text-center mb-10">
                     <h2 class="text-3xl font-bold text-gray-800">Kayıt Ol</h2>
-                    <p class="text-gray-500 mt-1">ÖğretmenPro'ya üye olarak kariyer fırsatlarını keşfedin</p>
+                    <p class="text-gray-500 mt-1">Öğretmen Portalı'na üye olarak kariyer fırsatlarını keşfedin</p>
                 </div>
                 
                 <?php if (!empty($errors)): ?>

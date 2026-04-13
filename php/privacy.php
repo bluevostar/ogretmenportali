@@ -8,7 +8,7 @@ include dirname(__DIR__) . '/includes/header.php';
         <article class="bg-white rounded-2xl p-8 md:p-10 border border-slate-100">
             <h1 class="text-3xl md:text-4xl font-bold text-slate-900">Gizlilik Politikası</h1>
             <p class="mt-4 text-slate-700 leading-7">
-                ÖğretmenPro, kullanıcı verilerini yalnızca hizmet sunumu, başvuru süreçlerinin yürütülmesi ve
+                Öğretmen Portalı, kullanıcı verilerini yalnızca hizmet sunumu, başvuru süreçlerinin yürütülmesi ve
                 yasal yükümlülüklerin yerine getirilmesi amacıyla işler.
             </p>
             <p class="mt-4 text-slate-700 leading-7">

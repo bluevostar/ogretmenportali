@@ -211,7 +211,7 @@
                         <div class="mr-2 h-10 w-10 bg-gradient-to-br from-teal-700 to-teal-800 rounded-lg flex items-center justify-center shadow-lg">
                             <i class="fas fa-graduation-cap text-white text-xl"></i>
                         </div>
-                        <span class="font-bold text-xl brand-name">ÖğretmenPro</span>
+                        <span class="font-bold text-xl brand-name">Öğretmen Portalı</span>
                     </a>
                 </div>
                 <?php else: ?>

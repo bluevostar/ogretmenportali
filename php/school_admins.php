@@ -71,7 +71,7 @@ $school_admins = $stmt->fetchAll();
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Okul Yöneticileri - ÖğretmenPro</title>
+    <title>Okul Yöneticileri - Öğretmen Portalı</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         table thead th {
