@@ -43401,3 +43401,373 @@ Stack trace:
     [message] => Ana sayfa ayarları başarıyla güncellendi.
 )
 
+[13-Apr-2026 12:52:39 Europe/Istanbul] Country Admin Panel - Gelen parametreler: Array
+(
+    [action] => settings
+    [status] => success
+    [message] => Ana sayfa ayarları başarıyla güncellendi.
+)
+
+[13-Apr-2026 12:52:44 Europe/Istanbul] Country Admin Panel - Gelen parametreler: Array
+(
+    [action] => dashboard
+)
+
+[13-Apr-2026 12:52:44 Europe/Istanbul] Country Admin Panel - Gelen parametreler: Array
+(
+    [action] => get_application_stats
+    [days] => 7
+)
+
+[13-Apr-2026 12:52:46 Europe/Istanbul] Country Admin Panel - Gelen parametreler: Array
+(
+    [action] => applications
+)
+
+[13-Apr-2026 12:52:46 Europe/Istanbul] Sorgu çalıştırılırken hata oluştu: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'a.teacher_id' in 'on clause'
+[13-Apr-2026 12:52:46 Europe/Istanbul] SQL sorgusu: 
+            SELECT a.*, 
+                   u.name as teacher_name, 
+                   s.name as school_name, 
+                   b.name as branch_name,
+                   admin.name as approved_by_name
+            FROM applications a
+            JOIN users u ON a.teacher_id = u.id
+            JOIN schools s ON a.school_id = s.id
+            JOIN branches b ON a.branch_id = b.id
+            LEFT JOIN users admin ON a.approved_by = admin.id
+            WHERE 1=1
+         ORDER BY a.application_date DESC
+[13-Apr-2026 12:52:46 Europe/Istanbul] Parametreler: Array
+(
+)
+
+[13-Apr-2026 12:52:47 Europe/Istanbul] Country Admin Panel - Gelen parametreler: Array
+(
+    [action] => schools
+)
+
+[13-Apr-2026 12:52:48 Europe/Istanbul] Country Admin Panel - Gelen parametreler: Array
+(
+)
+
+[13-Apr-2026 12:52:59 Europe/Istanbul] Country Admin Panel - Gelen parametreler: Array
+(
+    [action] => school_types
+)
+
+[13-Apr-2026 12:53:07 Europe/Istanbul] Country Admin Panel - Gelen parametreler: Array
+(
+    [action] => branches
+)
+
+[13-Apr-2026 12:53:09 Europe/Istanbul] Country Admin Panel - Gelen parametreler: Array
+(
+    [action] => country_admins
+)
+
+[13-Apr-2026 12:53:10 Europe/Istanbul] Country Admin Panel - Gelen parametreler: Array
+(
+    [action] => school_admins
+)
+
+[13-Apr-2026 12:53:13 Europe/Istanbul] Country Admin Panel - Gelen parametreler: Array
+(
+    [action] => teachers
+)
+
+[13-Apr-2026 12:53:15 Europe/Istanbul] Country Admin Panel - Gelen parametreler: Array
+(
+    [action] => settings
+)
+
+[13-Apr-2026 12:53:17 Europe/Istanbul] Country Admin Panel - Gelen parametreler: Array
+(
+    [action] => teachers
+)
+
+[13-Apr-2026 12:53:24 Europe/Istanbul] Country Admin Panel - Gelen parametreler: Array
+(
+    [action] => settings
+)
+
+[13-Apr-2026 12:54:34 Europe/Istanbul] Country Admin Panel - Gelen parametreler: Array
+(
+    [action] => dashboard
+)
+
+[13-Apr-2026 12:54:35 Europe/Istanbul] Country Admin Panel - Gelen parametreler: Array
+(
+    [action] => get_application_stats
+    [days] => 7
+)
+
+[13-Apr-2026 12:54:36 Europe/Istanbul] Country Admin Panel - Gelen parametreler: Array
+(
+    [action] => applications
+)
+
+[13-Apr-2026 12:54:36 Europe/Istanbul] Sorgu çalıştırılırken hata oluştu: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'a.teacher_id' in 'on clause'
+[13-Apr-2026 12:54:36 Europe/Istanbul] SQL sorgusu: 
+            SELECT a.*, 
+                   u.name as teacher_name, 
+                   s.name as school_name, 
+                   b.name as branch_name,
+                   admin.name as approved_by_name
+            FROM applications a
+            JOIN users u ON a.teacher_id = u.id
+            JOIN schools s ON a.school_id = s.id
+            JOIN branches b ON a.branch_id = b.id
+            LEFT JOIN users admin ON a.approved_by = admin.id
+            WHERE 1=1
+         ORDER BY a.application_date DESC
+[13-Apr-2026 12:54:36 Europe/Istanbul] Parametreler: Array
+(
+)
+
+[13-Apr-2026 12:54:37 Europe/Istanbul] Country Admin Panel - Gelen parametreler: Array
+(
+    [action] => dashboard
+)
+
+[13-Apr-2026 12:54:37 Europe/Istanbul] Country Admin Panel - Gelen parametreler: Array
+(
+    [action] => get_application_stats
+    [days] => 7
+)
+
+[13-Apr-2026 12:54:38 Europe/Istanbul] Country Admin Panel - Gelen parametreler: Array
+(
+    [action] => schools
+)
+
+[13-Apr-2026 12:54:38 Europe/Istanbul] Country Admin Panel - Gelen parametreler: Array
+(
+)
+
+[13-Apr-2026 12:54:40 Europe/Istanbul] Country Admin Panel - Gelen parametreler: Array
+(
+    [action] => school_types
+)
+
+[13-Apr-2026 12:54:45 Europe/Istanbul] Country Admin Panel - Gelen parametreler: Array
+(
+    [action] => branches
+)
+
+[13-Apr-2026 12:54:48 Europe/Istanbul] Country Admin Panel - Gelen parametreler: Array
+(
+    [action] => country_admins
+)
+
+[13-Apr-2026 12:54:50 Europe/Istanbul] Country Admin Panel - Gelen parametreler: Array
+(
+    [action] => school_admins
+)
+
+[13-Apr-2026 12:54:53 Europe/Istanbul] Country Admin Panel - Gelen parametreler: Array
+(
+    [action] => teachers
+)
+
+[13-Apr-2026 12:54:57 Europe/Istanbul] Country Admin Panel - Gelen parametreler: Array
+(
+    [action] => school_admins
+)
+
+[13-Apr-2026 12:54:58 Europe/Istanbul] Country Admin Panel - Gelen parametreler: Array
+(
+    [action] => country_admins
+)
+
+[13-Apr-2026 12:55:02 Europe/Istanbul] Country Admin Panel - Gelen parametreler: Array
+(
+    [action] => country_admins
+    [search] => 
+    [page] => 2
+)
+
+[13-Apr-2026 12:55:12 Europe/Istanbul] Country Admin Panel - Gelen parametreler: Array
+(
+    [action] => dashboard
+)
+
+[13-Apr-2026 12:55:12 Europe/Istanbul] Country Admin Panel - Gelen parametreler: Array
+(
+    [action] => get_application_stats
+    [days] => 7
+)[13-Apr-2026 12:56:37 Europe/Istanbul] Country Admin Panel - Gelen parametreler: Array
+(
+)
+
+[13-Apr-2026 12:56:37 Europe/Istanbul] Country Admin Panel - Gelen parametreler: Array
+(
+    [action] => get_application_stats
+    [days] => 7
+)
+
+[13-Apr-2026 12:57:34 Europe/Istanbul] Country Admin Panel - Gelen parametreler: Array
+(
+)
+
+[13-Apr-2026 12:57:35 Europe/Istanbul] Country Admin Panel - Gelen parametreler: Array
+(
+    [action] => get_application_stats
+    [days] => 7
+)
+
+[13-Apr-2026 12:57:52 Europe/Istanbul] Country Admin Panel - Gelen parametreler: Array
+(
+    [action] => settings
+)
+
+[13-Apr-2026 12:57:55 Europe/Istanbul] Country Admin Panel - Gelen parametreler: Array
+(
+    [action] => dashboard
+)
+
+[13-Apr-2026 12:57:55 Europe/Istanbul] Country Admin Panel - Gelen parametreler: Array
+(
+    [action] => get_application_stats
+    [days] => 7
+)
+
+[13-Apr-2026 12:58:43 Europe/Istanbul] Country Admin Panel - Gelen parametreler: Array
+(
+)
+
+[13-Apr-2026 12:58:43 Europe/Istanbul] Country Admin Panel - Gelen parametreler: Array
+(
+    [action] => get_application_stats
+    [days] => 7
+)
+
+[13-Apr-2026 13:07:13 Europe/Istanbul] Country Admin Panel - Gelen parametreler: Array
+(
+)
+
+[13-Apr-2026 13:07:13 Europe/Istanbul] Country Admin Panel - Gelen parametreler: Array
+(
+    [action] => get_application_stats
+    [days] => 7
+)
+
+[13-Apr-2026 13:07:18 Europe/Istanbul] Country Admin Panel - Gelen parametreler: Array
+(
+)
+
+[13-Apr-2026 13:07:18 Europe/Istanbul] Country Admin Panel - Gelen parametreler: Array
+(
+    [action] => get_application_stats
+    [days] => 7
+)
+
+[13-Apr-2026 13:09:14 Europe/Istanbul] Country Admin Panel - Gelen parametreler: Array
+(
+    [action] => applications
+)
+
+[13-Apr-2026 13:09:14 Europe/Istanbul] Sorgu çalıştırılırken hata oluştu: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'a.teacher_id' in 'on clause'
+[13-Apr-2026 13:09:14 Europe/Istanbul] SQL sorgusu: 
+            SELECT a.*, 
+                   u.name as teacher_name, 
+                   s.name as school_name, 
+                   b.name as branch_name,
+                   admin.name as approved_by_name
+            FROM applications a
+            JOIN users u ON a.teacher_id = u.id
+            JOIN schools s ON a.school_id = s.id
+            JOIN branches b ON a.branch_id = b.id
+            LEFT JOIN users admin ON a.approved_by = admin.id
+            WHERE 1=1
+         ORDER BY a.application_date DESC
+[13-Apr-2026 13:09:14 Europe/Istanbul] Parametreler: Array
+(
+)
+
+[13-Apr-2026 13:09:15 Europe/Istanbul] Country Admin Panel - Gelen parametreler: Array
+(
+    [action] => schools
+)
+
+[13-Apr-2026 13:09:15 Europe/Istanbul] Country Admin Panel - Gelen parametreler: Array
+(
+)
+
+[13-Apr-2026 13:09:16 Europe/Istanbul] Country Admin Panel - Gelen parametreler: Array
+(
+    [action] => applications
+)
+
+[13-Apr-2026 13:09:16 Europe/Istanbul] Sorgu çalıştırılırken hata oluştu: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'a.teacher_id' in 'on clause'
+[13-Apr-2026 13:09:16 Europe/Istanbul] SQL sorgusu: 
+            SELECT a.*, 
+                   u.name as teacher_name, 
+                   s.name as school_name, 
+                   b.name as branch_name,
+                   admin.name as approved_by_name
+            FROM applications a
+            JOIN users u ON a.teacher_id = u.id
+            JOIN schools s ON a.school_id = s.id
+            JOIN branches b ON a.branch_id = b.id
+            LEFT JOIN users admin ON a.approved_by = admin.id
+            WHERE 1=1
+         ORDER BY a.application_date DESC
+[13-Apr-2026 13:09:16 Europe/Istanbul] Parametreler: Array
+(
+)
+
+[13-Apr-2026 13:09:17 Europe/Istanbul] Country Admin Panel - Gelen parametreler: Array
+(
+    [action] => dashboard
+)
+
+[13-Apr-2026 13:09:17 Europe/Istanbul] Country Admin Panel - Gelen parametreler: Array
+(
+    [action] => get_application_stats
+    [days] => 7
+)
+
+[13-Apr-2026 13:09:19 Europe/Istanbul] Country Admin Panel - Gelen parametreler: Array
+(
+    [action] => applications
+)
+
+[13-Apr-2026 13:09:19 Europe/Istanbul] Sorgu çalıştırılırken hata oluştu: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'a.teacher_id' in 'on clause'
+[13-Apr-2026 13:09:19 Europe/Istanbul] SQL sorgusu: 
+            SELECT a.*, 
+                   u.name as teacher_name, 
+                   s.name as school_name, 
+                   b.name as branch_name,
+                   admin.name as approved_by_name
+            FROM applications a
+            JOIN users u ON a.teacher_id = u.id
+            JOIN schools s ON a.school_id = s.id
+            JOIN branches b ON a.branch_id = b.id
+            LEFT JOIN users admin ON a.approved_by = admin.id
+            WHERE 1=1
+         ORDER BY a.application_date DESC
+[13-Apr-2026 13:09:19 Europe/Istanbul] Parametreler: Array
+(
+)
+
+[13-Apr-2026 13:09:20 Europe/Istanbul] Country Admin Panel - Gelen parametreler: Array
+(
+    [action] => teachers
+)
+
+[13-Apr-2026 13:09:21 Europe/Istanbul] Country Admin Panel - Gelen parametreler: Array
+(
+    [action] => settings
+)
+
+[13-Apr-2026 13:09:28 Europe/Istanbul] Country Admin Panel - Gelen parametreler: Array
+(
+)
+
+[13-Apr-2026 13:09:28 Europe/Istanbul] Country Admin Panel - Gelen parametreler: Array
+(
+    [action] => get_application_stats
+    [days] => 7
+)
+
