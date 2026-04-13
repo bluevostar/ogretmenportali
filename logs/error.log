@@ -43771,3 +43771,70 @@ Stack trace:
     [days] => 7
 )
 
+[13-Apr-2026 13:10:34 Europe/Istanbul] Country Admin Panel - Gelen parametreler: Array
+(
+)
+
+[13-Apr-2026 13:10:35 Europe/Istanbul] Country Admin Panel - Gelen parametreler: Array
+(
+    [action] => get_application_stats
+    [days] => 7
+)
+
+[13-Apr-2026 13:10:37 Europe/Istanbul] Country Admin Panel - Gelen parametreler: Array
+(
+    [action] => applications
+)
+
+[13-Apr-2026 13:10:37 Europe/Istanbul] Sorgu çalıştırılırken hata oluştu: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'a.teacher_id' in 'on clause'
+[13-Apr-2026 13:10:37 Europe/Istanbul] SQL sorgusu: 
+            SELECT a.*, 
+                   u.name as teacher_name, 
+                   s.name as school_name, 
+                   b.name as branch_name,
+                   admin.name as approved_by_name
+            FROM applications a
+            JOIN users u ON a.teacher_id = u.id
+            JOIN schools s ON a.school_id = s.id
+            JOIN branches b ON a.branch_id = b.id
+            LEFT JOIN users admin ON a.approved_by = admin.id
+            WHERE 1=1
+         ORDER BY a.application_date DESC
+[13-Apr-2026 13:10:37 Europe/Istanbul] Parametreler: Array
+(
+)
+
+[13-Apr-2026 13:10:38 Europe/Istanbul] Country Admin Panel - Gelen parametreler: Array
+(
+    [action] => schools
+)
+
+[13-Apr-2026 13:10:39 Europe/Istanbul] Country Admin Panel - Gelen parametreler: Array
+(
+)
+
+[13-Apr-2026 13:10:44 Europe/Istanbul] Country Admin Panel - Gelen parametreler: Array
+(
+    [action] => country_admins
+)
+
+[13-Apr-2026 13:10:45 Europe/Istanbul] Country Admin Panel - Gelen parametreler: Array
+(
+    [action] => school_admins
+)
+
+[13-Apr-2026 13:10:46 Europe/Istanbul] Country Admin Panel - Gelen parametreler: Array
+(
+    [action] => teachers
+)
+
+[13-Apr-2026 13:12:06 Europe/Istanbul] Country Admin Panel - Gelen parametreler: Array
+(
+)
+
+[13-Apr-2026 13:12:06 Europe/Istanbul] Country Admin Panel - Gelen parametreler: Array
+(
+    [action] => get_application_stats
+    [days] => 7
+)
+
